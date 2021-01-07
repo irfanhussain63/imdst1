@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{
+			background-color: lightblue;
+		}
+	</style>
+
+ <style>
+	* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+	<img src="im/img.jpg" width="1350" height="150" align="center">
+	<br><br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="im/is3.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="im/is10.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="im/is6.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+<br>
+<br>
+<hr>
+
+   <h5>DST-Center For Policy Research</h5><hr>
+   
+	<p>The DST- Centre for Policy Research (DST-CPR) at IISc was established in August 2014 with two broad goals, viz.,<br> (i) studying policies and mechanisms that can help increase the research impact of Indian institutions and thereby improve their position in global rankings and <br>
+	(ii) critically examining the different funding mechanisms and their efficacy in raising the research impact of Indian institutions. The Centre’s work towards these goals has multiple facets, including a scientometric study to access how well Indian institutions perform in various fields of scientific research.</p>
+    
+	<a href="https://dstcpriisc.org/about-us/"><button class="button button1" >About Us</button></a>
+	<hr><h5>Research Areas </h5><hr>
+
+	<a href="https://dstcpriisc.org/2018/08/09/scientometrics-analysis/"><img src="im/is6.jpg" alt="HTML " style="width:200px;height:100px;"></a>
+
+	<a href="https://dstcpriisc.org/2018/08/10/sti-indicators-and-rd-statistics/"><img src="im/is7.jpg" alt="HTML " style="width:200px;height:100px;"></a>
+
+	<a href="https://dstcpriisc.org/2018/08/10/policies-for-industrial-rd/"><img src="im/is8.jpg" alt="HTML " style="width:200px;height:100px;"></a>
+
+	<a href="https://dstcpriisc.org/2018/08/10/government-science-advice/"><img src="im/is9.jpg" alt="HTML " style="width:200px;height:100px;"></a>
+
+	<a href="https://dstcpriisc.org/2018/08/10/science-diplomacy/"><img src="im/is10.jpg" alt="HTML " style="width:200px;height:100px;"></a>
+
+	<a href="https://dstcpriisc.org/2018/08/10/responsible-research-and-innovation-rri/"><img src="im/is11.jpg" alt="HTML " style="width:200px;height:100px;"></a>
+
+	<a href="https://dstcpriisc.org/2018/08/10/women-in-science-in-india/"><img src="im/is12.jpg" alt="HTML " style="width:200px;height:100px;"></a>
+
+	<a href="https://dstcpriisc.org/2018/08/11/technology-assessment-ta-vision-analysis/"><img src="im/is13.jpg" alt="HTML " style="width:200px;height:100px;"></a>
+
+	<a href="https://dstcpriisc.org/2020/12/15/emerging-technologies/"><img src="im/is14.jpg" alt="HTML " style="width:200px;height:100px;"></a>
+
+</body>
+</html> 
